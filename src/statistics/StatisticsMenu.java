@@ -8,7 +8,7 @@ public class StatisticsMenu {
     private Scanner sc = new Scanner(System.in);
 
     public int receiveUserInput(){
-        int userInput = sc.nextInt();
+        int userInput = Integer.parseInt(sc.nextLine());
         return userInput;
     }
 
@@ -26,10 +26,11 @@ public class StatisticsMenu {
     }
 
     public void displayStatistics(){
-        if (receiveUserInput() == 1){
+        int choice = receiveUserInput();
+        if (choice == 1){
             displayCoffeeStatistics();
 
-        }else if (receiveUserInput() == 2){
+        }else if (choice == 2){
             displayFoodStatistics();
         }
 

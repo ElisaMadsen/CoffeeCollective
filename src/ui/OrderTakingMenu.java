@@ -10,7 +10,7 @@ public class OrderTakingMenu {
     }
 
     public int receiveUserInput(){
-        int userInput = input.nextInt();
+        int userInput = Integer.parseInt(input.nextLine());
         return userInput;
     }
 
