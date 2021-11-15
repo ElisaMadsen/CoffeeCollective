@@ -1,4 +1,4 @@
-package ui;
+package statistics;
 
 import statistics.CoffeeTypeCounter;
 
@@ -23,5 +23,15 @@ public class StatisticsMenu {
 
     public void displayFoodStatistics(){
         System.out.println(CoffeeTypeCounter.howManyFoodsSold());
+    }
+
+    public void displayStatistics(){
+        if (receiveUserInput() == 1){
+            displayCoffeeStatistics();
+
+        }else if (receiveUserInput() == 2){
+            displayFoodStatistics();
+        }
+
     }
 }

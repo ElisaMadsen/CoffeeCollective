@@ -1,42 +1,27 @@
-import products.*;
-import ui.Menu;
+import controllers.OrderController;
+import statistics.CustomerBasket;
 import ui.OrderTakingMenu;
-import ui.StatisticsMenu;
+import statistics.StatisticsMenu;
 
 public class CoffeeOrderApp {
+
+   private static CoffeeOrderApp orderApp = new CoffeeOrderApp();
+   private static OrderTakingMenu orderMenu = new OrderTakingMenu();
+   private static StatisticsMenu statisticsMenu = new StatisticsMenu();
+   private static OrderController orderController = new OrderController();
+   private static CustomerBasket customerBasket = new CustomerBasket();
+
     public static void main(String[] args) {
         //Currently everything is in main... Hmm maybe someone should fix this? Maybe if one had a pattern to follow
         //Could be a pattern to "control" the flow of execution
-        OrderTakingMenu orderMenu = new OrderTakingMenu();
-        StatisticsMenu statisticsMenu = new StatisticsMenu();
 
-        orderMenu.welcomeUser();
-        int userInput;
-        CustomerBasket currentCustomer = new CustomerBasket();
-        do{
-            orderMenu.printOptions();
-            userInput = orderMenu.receiveUserInput();
-            switch(userInput){
-                case 1:
-                    currentCustomer.addToAmericano(new Americano());
-                    break;
-                case 2:
-                    currentCustomer.addToEspresso(new Espresso());
-                    break;
-                case 3:
-                    System.out.println("added a croissant");
-                    break;
-                case 4:
-                    currentCustomer.addToBaguette(new Baguette());
-                    break;
-                case 5:
-                    currentCustomer.addToCroissant(new Croissant());
-                    break;
-                case 6:
-                    statisticsMenu.printStatisticsChoice();
-                    statisticsMenu.receiveUserInput();
-                    break;
-            }
-        }while(userInput != 9);
+        orderApp.orderMenu.welcomeUser();
+
+        CustomerBasket basket = orderApp.orderController.createOrder();
+
+        basket.getTotalPrice();
+
+
+
     }
 }

@@ -1,19 +1,15 @@
 package products;
 
 public class Croissant {
-    private String title;
-    private int price;
-
-    public Croissant(){
-        this.title = new Baguette().getTitle();
-        this.price = new Baguette().getCroissantPrice();
-    }
+    private String croissantTitle = "Croissant";
+    private int croissantPrice = 20;
 
     public String getTitle() {
-        return title;
+        return croissantTitle;
     }
 
     public int getPrice() {
-        return price;
+        return croissantPrice;
     }
+
 }

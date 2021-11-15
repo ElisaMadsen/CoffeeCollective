@@ -7,31 +7,31 @@ public class CoffeeTypeCounter {
     private static int croissants= 0;
     private static int baguettes= 0;
 
-    public static void oneAmericanoSold(){
+    public void oneAmericanoSold(){
        americanos++;
     }
-    public static void oneEspressoSold(){
+    public void oneEspressoSold(){
         espressos++;
     }
-    public static void oneTeaSold(){
+    public void oneTeaSold(){
         teas++;
     }
-    public static void oneCroissantSold(){
-        teas++;
+    public void oneCroissantSold(){
+        croissants++;
     }
-    public static void oneBaguetteSold(){
-        teas++;
-    }
-
-    public static int howManyCoffeesSold(){
-        return americanos + espressos + teas + croissants + baguettes;
+    public void oneBaguetteSold(){
+        baguettes++;
     }
 
-    public static int howManyFoodsSold(){
-        return americanos + espressos + teas + croissants + baguettes;
+    public static String howManyCoffeesSold(){
+        return "Americano: " + americanos + "\nEspresso: " + espressos + "\nTea: " + teas;
     }
 
-    public static int howManySoldInTotal(){
-        return howManyCoffeesSold() + howManyCoffeesSold();
+    public static String howManyFoodsSold(){
+        return "Croissant: " + croissants + "\nBaguette: " + baguettes;
+    }
+
+    public static void howManySoldInTotal(){
+        System.out.println(howManyCoffeesSold() + howManyCoffeesSold());
     }
 }
