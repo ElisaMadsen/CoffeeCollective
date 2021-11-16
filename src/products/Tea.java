@@ -1,6 +1,6 @@
 package products;
 
-public class Tea extends Beverages {
+public class Tea extends Beverage {
 
     public Tea() {
         super("Tea", 60);

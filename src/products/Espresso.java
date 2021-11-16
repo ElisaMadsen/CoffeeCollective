@@ -1,6 +1,6 @@
 package products;
 
-public class Espresso extends Beverages {
+public class Espresso extends Beverage {
 
 
     public Espresso() {

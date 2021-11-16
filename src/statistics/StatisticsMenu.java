@@ -25,7 +25,8 @@ public class StatisticsMenu {
         System.out.println(CoffeeTypeCounter.howManyFoodsSold());
     }
 
-    public void displayStatistics(){
+    public void printStatistics(){
+        printStatisticsChoice();
         int choice = receiveUserInput();
         if (choice == 1){
             displayCoffeeStatistics();
@@ -36,3 +37,4 @@ public class StatisticsMenu {
 
     }
 }
+

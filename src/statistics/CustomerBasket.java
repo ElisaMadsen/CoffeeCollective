@@ -5,31 +5,18 @@ import products.*;
 import java.util.ArrayList;
 
 public class CustomerBasket {
-    private ArrayList<Americano> americansOrdered = new ArrayList<Americano>();
-    private ArrayList<Espresso> espressosOrdered = new ArrayList<Espresso>();
-    private static ArrayList<Tea> teaOrdered = new ArrayList<Tea>();
-    private ArrayList<Croissant> croissantsOrdered = new ArrayList<Croissant>();
-    private ArrayList<Baguette> baguettesOrdered = new ArrayList<Baguette>();
+    private ArrayList<Beverage> beveragesOrdered = new ArrayList<Beverage>();
+    private ArrayList<Food> foodsOrdered = new ArrayList<Food>();
     private static ArrayList<Integer> orderPrice = new ArrayList<Integer>();
 
-    public void addToAmericano(Americano order){
-        americansOrdered.add(order);
+
+    public void addBeverage (Beverage order){
+        beveragesOrdered.add(order);
         orderPrice.add(order.getPrice());
     }
-    public void addToEspresso(Espresso order){
-        espressosOrdered.add(order);
-        orderPrice.add(order.getPrice());
-    }
-    public static void addToTea(Tea order){
-        teaOrdered.add(order);
-        orderPrice.add(order.getPrice());
-    }
-    public void addToCroissant(Croissant order){
-        croissantsOrdered.add(order);
-        orderPrice.add(order.getPrice());
-    }
-    public void addToBaguette(Baguette order){
-        baguettesOrdered.add(order);
+
+    public void addFood (Food order){
+        foodsOrdered.add(order);
         orderPrice.add(order.getPrice());
     }
 
@@ -42,4 +29,5 @@ public class CustomerBasket {
         System.out.println("Total price: " + priceTotal + "kr.");
         return priceTotal;
     }
+
 }
