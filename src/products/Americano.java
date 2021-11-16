@@ -1,14 +1,9 @@
 package products;
 
-public class Americano {
-    private String title = "Americano";
-    private int price = 15;
+public class Americano extends Beverages{
 
-    public String getTitle() {
-        return title;
+    public Americano() {
+        super("Americano", 15);
     }
 
-    public int getPrice() {
-        return price;
-    }
 }

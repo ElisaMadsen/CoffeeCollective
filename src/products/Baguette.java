@@ -1,16 +1,10 @@
 package products;
 
-public class Baguette {
-    private String title = "Baguette";
-    private int price = 30;
+public class Baguette extends Food  {
 
-
-    public String getTitle() {
-        return title;
+    public Baguette() {
+        super("Baguette", 30);
     }
 
-    public int getPrice() {
-        return price;
-    }
 
 }

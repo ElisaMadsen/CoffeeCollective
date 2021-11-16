@@ -1,14 +1,11 @@
 package products;
 
-public class Espresso {
-    private String title = "Espresso";
-    private int price = 40;
+public class Espresso extends Beverages {
 
-    public String getTitle() {
-        return title;
+
+    public Espresso() {
+        super("Espresso", 40);
     }
 
-    public int getPrice() {
-        return price;
-    }
+
 }

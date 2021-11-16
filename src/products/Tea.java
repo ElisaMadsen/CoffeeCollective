@@ -1,14 +1,10 @@
 package products;
 
-public class Tea {
-    private String title = "Tea";
-    private int price = 60;
+public class Tea extends Beverages {
 
-    public String getTitle() {
-        return title;
+    public Tea() {
+        super("Tea", 60);
     }
 
-    public int getPrice() {
-        return price;
-    }
+
 }
