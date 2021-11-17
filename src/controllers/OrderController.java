@@ -1,5 +1,6 @@
 package controllers;
 
+import database.FileReader;
 import productFactory.ProductFactory;
 import products.*;
 import statistics.CoffeeTypeCounter;
@@ -13,6 +14,7 @@ public class OrderController {
     private StatisticsMenu statisticsMenu = new StatisticsMenu();
     private CoffeeTypeCounter coffeeTypeCounter = new CoffeeTypeCounter();
     private ProductFactory productFactory = new ProductFactory();
+    private static FileReader receipts = new FileReader();
 
     public CustomerBasket createOrder() {
         int userInput;
@@ -53,6 +55,8 @@ public class OrderController {
                     break;
             }
         } while (userInput != 9);
+
+        receipts.readFile(currentCustomer);
         return currentCustomer;
     }
 }

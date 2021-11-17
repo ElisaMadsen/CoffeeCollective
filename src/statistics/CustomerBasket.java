@@ -10,6 +10,7 @@ public class CustomerBasket {
     private static ArrayList<Integer> orderPrice = new ArrayList<Integer>();
 
 
+
     public void addBeverage (Beverage order){
         beveragesOrdered.add(order);
         orderPrice.add(order.getPrice());
@@ -30,4 +31,10 @@ public class CustomerBasket {
         return priceTotal;
     }
 
+    @Override
+    public String toString() {
+        return "Receipt: \n" +
+                "Beverage: " + beveragesOrdered +
+                " \nFood: " + foodsOrdered;
+    }
 }
