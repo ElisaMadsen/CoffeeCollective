@@ -1,0 +1,46 @@
+Receipt:
+Beverage: [Espresso 40 Kr. , Tea 60 Kr. ] 
+Food: [Croissant 20 Kr. 
+]
+
+Receipt: 
+Beverage: [Espresso 40 Kr. , Tea 60 Kr. ] 
+Food: [Croissant 20 Kr. 
+]
+
+Receipt: 
+Beverage: [Americano 15 Kr. , Espresso 40 Kr. , Tea 60 Kr. , Americano 15 Kr. ] 
+Food: [Croissant 20 Kr., Baguette 30 Kr.]
+
+Receipt: 
+Beverage: [Americano 15 Kr. , Espresso 40 Kr. , Tea 60 Kr. , Americano 15 Kr. ] 
+Food: [Croissant 20 Kr., Baguette 30 Kr.]
+
+Receipt: 
+Beverage: [Espresso 40 Kr. ] 
+Food: [Croissant 20 Kr., Baguette 30 Kr.]90
+
+Receipt: 
+Beverage: [Espresso 40 Kr. ] 
+Food: [Croissant 20 Kr., Baguette 30 Kr.]90
+
+Receipt: 
+Beverage: [Americano 15 Kr. ] 
+Food: []
+
+Receipt: 
+Beverage: [Americano 15 Kr. , Espresso 40 Kr. ] 
+Food: []
+
+Receipt: 
+Beverage: [Americano 15 Kr. , Americano 15 Kr. ] 
+Food: []
+
+Receipt: 
+Beverage: [Americano 15 Kr. , Espresso 40 Kr. , Espresso 40 Kr. ] 
+Food: []0
+
+Receipt: 
+Beverage: [Americano 15 Kr. , Espresso 40 Kr. , Tea 60 Kr. ] 
+Food: []0
+
